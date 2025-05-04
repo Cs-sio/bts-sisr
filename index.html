@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div class="background"></div>
+    <div class="parallax-bg"></div>
+    
+    <!-- Navigation (initially hidden) -->
+    <nav class="navbar hidden">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="home-link">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#network-student">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Landing Section -->
+        <section class="landing-section">
+            <div class="header-content animate-entrance">
+                <div id="clock" class="clock-container"></div>
+                <h1 class="welcome-text">Welcome to my Portfolio</h1>
+                <img src="https://wallpapercave.com/wp/wp13377675.png" alt="Portrait professionnel" class="profile-img">
+                <button class="portfolio-btn">Explore Portfolio <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Network Student Section -->
+        <section id="network-student" class="section hidden">
+            <div class="split-content">
+                <div class="text-content">
+                    <h2 class="section-title">Etudiant Réseaux</h2>
+                    <p class="section-description">Étudiant en Réseaux et Cybersécurité</p>
+                    <div class="button-group">
+                        <button class="section-btn" data-target="projects">Projets</button>
+                        <button class="section-btn" data-target="formation">Formation</button>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img src="https://static-00.iconduck.com/assets.00/distributor-logo-kali-linux-icon-2048x2005-dki611fk.png" alt="Network and Cybersecurity" class="network-image">
+                    <img src="https://cdn3.iconfinder.com/data/icons/brands-pack/240/linux-512.png" alt="Network and Cybersecurity" class="network-image">
+               
+                </div>
+            </div>
+            
+            <!-- About Me Section (now part of Network Student) -->
+            <div class="about-section">
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h3>Chris Sewpersad</h3>
+                            <p>Passionné par la sécurité informatique et la protection des données. Je suis actuellement en formation BTS SIO SISR, spécialisé dans les réseaux et la cybersécurité.</p>
+                            <div class="social-links">
+                                <a href="mailto:chris.sewpersad@email.com" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/chrissewpersad" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/chrissewpersad" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <a href="cv.pdf" class="download-cv" download>
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience/Skills Section -->
+            <div class="experience-skills-section">
+                <div class="experience-content">
+                    <h2 class="section-title">Experience/Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card" style="--glow-color: #00ff9d;">
+                            <div class="flex-center mb-4">
+                                <i class="fas fa-shield-alt" style="color: #ff6f61; font-size: 1.5rem; margin-right: 0.75rem;"></i>
+                            </div>
+                            <h4>Technical Skills</h4>
+                            <ul class="skills-list">
+                                <li>Linux/Windows Systems Administration</li>
+                                <li>Virtualization (VMware, VirtualBox)</li>
+                                <li>TCP/IP Networks, VLANs, Routing</li>
+                                <li>Security (Firewall, IDS/IPS, VPN)</li>
+                                <li>Scripting (Python, Bash)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card" style="--glow-color: #00ff9d;">
+                            <div class="flex-center mb-4">
+                                <i class="fas fa-briefcase" style="color: #00ff9d; font-size: 1.5rem; margin-right: 0.75rem;"></i>
+                            </div>
+                            <h4>Professional Experience</h4>
+                            <ul class="skills-list">
+                                <li>BTS Internship - System Administration</li>
+                                <li>Infrastructure Security Projects</li>
+                                <li>Security Auditing</li>
+                                <li>Technical Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section hidden">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>........</h3>
+                    <p>...................</p>
+                    <button class="view-more-btn">Voir plus</button>
+                    <div class="project-details hidden">
+                        <p>Plus de détails sur le projet ...</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>....</h3>
+                    <p>.......................</p>
+                    <button class="view-more-btn">Voir plus</button>
+                    <div class="project-details hidden">
+                        <p>Plus de détails sur le projet ...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience/Skills Section -->
+        <section id="experiences" class="section hidden">
+            <h2 class="section-title">Experience/Skills</h2>
+            <div class="experiences-section">
+                <div class="experiences-content">
+                    <div class="experiences-grid">
+                        <div class="experience-card">
+                            <h4>Technical Skills</h4>
+                            <ul class="competences-list">
+                                <li>Linux/Windows Systems Administration</li>
+                                <li>Virtualization (VMware, VirtualBox)</li>
+                                <li>TCP/IP Networks, VLANs, Routing</li>
+                                <li>Security (Firewall, IDS/IPS, VPN)</li>
+                                <li>Scripting (Python, Bash)</li>
+                            </ul>
+                        </div>
+                        <div class="experience-card">
+                            <h4>Professional Experience</h4>
+                            <ul class="competences-list">
+                                <li>BTS Internship - System Administration</li>
+                                <li>Infrastructure Security Projects</li>
+                                <li>Security Auditing</li>
+                                <li>Technical Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formation Section -->
+        <section id="formation" class="section hidden">
+            <div class="bts-content">
+                <div class="bts-card">
+                    <h3>BTS SIO SISR</h3>
+                    <p>Services Informatiques aux Organisations - Option SISR</p>
+                    <ul>
+                        <li>Administration systèmes et réseaux</li>
+                        <li>Sécurisation des infrastructures</li>
+                        <li>Virtualisation et cloud computing</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- New Epreuves Section -->
+            <div class="epreuves-content">
+                <div class="epreuve-card">
+                    <h3>Epreuves professionnelles</h3>
+                    <button class="view-more-btn">Voir plus</button>
+                    <div class="epreuve-details hidden">
+                        <p>Plus de détails sur les épreuves professionnelles...</p>
+                        <img src="path/to/image.jpg" alt="Image des épreuves professionnelles">
+                    </div>
+                </div>
+                <div class="epreuve-card">
+                    <h3>Epreuves générales</h3>
+                    <button class="view-more-btn">Voir plus</button>
+                    <div class="epreuve-details hidden">
+                        <p>Plus de détails sur les épreuves générales...</p>
+                        <img src="path/to/image.jpg" alt="Image des épreuves générales">
+                    </div>
+                </div>
+            </div>
+        </section>
+   <section id="bts-sio" class="section-hidden">
+                <h2>BTS SIO SISR</h2>
+                <div class="bts-content">
+                    <div class="bts-card">
+                        <h3>Présentation du BTS SIO SISR</h3>
+                        <p>Le BTS SIO (Services Informatiques aux Organisations) option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) est une formation de niveau Bac+2 qui forme des professionnels capables de :</p>
+                        <ul>
+                            <li>Administrer des systèmes et des réseaux</li>
+                            <li>Gérer la sécurité des infrastructures</li>
+                            <li>Maintenir et optimiser les services informatiques</li>
+                            <li>Assurer la continuité des services</li>
+                        </ul>
+                    </div>
+                    <div class="bts-card">
+                        <h3>Compétences acquises</h3>
+                        <ul>
+                            <li>Configuration et maintenance des serveurs</li>
+                            <li>Gestion des réseaux d'entreprise</li>
+                            <li>Sécurisation des infrastructures</li>
+                            <li>Virtualisation et cloud computing</li>
+                            <li>Support technique et assistance utilisateur</li>
+                        </ul>
+                    </div>
+                    <div class="bts-card">
+                        <h3>Débouchés professionnels</h3>
+                        <ul>
+                            <li>Administrateur systèmes et réseaux</li>
+                            <li>Technicien support</li>
+                            <li>Responsable sécurité informatique</li>
+                            <li>Consultant IT</li>
+                            <li>Technicien d'infrastructure</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="parallax.js"></script>
+    <script src="animations.js"></script>
+    <script src="clock.js"></script>
+</body>
+</html>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html" class="home-link">Accueil</a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="sections.html#network-student">Sections</a></li>
+        </ul>
+    </div>
+</nav>
